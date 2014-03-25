@@ -22,17 +22,14 @@ $backendData = new backend();
         <section class="topRanking">
             <?
 //            print_r($backendData->get_top_ranking()->fetchAll()) ;
-
-            foreach($backendData->get_top_ranking()->fetchAll() as $data){
-                $restaurantName = $data->restaurantName;
-                $description = $data->description;
-                $ranking = $data->ranking;
-                $hipsterRanking = $data->hipsterRanking;
-                ?>
+                foreach($backendData->get_top_ranking()->fetchAll() as $data){
+                    $restaurantName = $data->restaurantName;
+                    $description = $data->description;
+                    $ranking = $data->ranking;
+                    $hipsterRanking = $data->hipsterRanking;
+            ?>
                 <article>
-                    <header>
-                        <h3><?=$restaurantName?></h3>
-                    </header>
+                    <h3><?=$restaurantName?></h3>
                     <aside>
                         Ranking: <?=$backendData->show_ranking($ranking)?> (<?=$ranking?>/5)<br/>
                         Hipster Ranking: <?=$backendData->show_ranking($hipsterRanking)?>
