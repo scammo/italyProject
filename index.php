@@ -33,7 +33,7 @@ $backendData = new backend();
                         <h2><?=$restaurantName?></h2>
                     </header>
                     <aside>
-                        Ranking: <?=$backendData->show_ranking($ranking)?> (<?=$ranking?>/5)
+                        Ranking: <?=$backendData->show_ranking($ranking)?> (<?=$ranking?>/5)<br/>
                         Hipster Ranking: <?=$backendData->show_ranking($hipsterRanking)?>
                     </aside>
                     <p>

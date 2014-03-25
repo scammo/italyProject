@@ -6,15 +6,18 @@
  * Time: 11:02
  */
 
-class backend {
+require('config.php');
+
+class backend extends config{
     function __construct(){
+        $config = new config();
         try{
             switch($_SERVER['SERVER_NAME']){
                 case 'localhost':
                     $this->db = new PDO("mysql:host=localhost;dbname=mifSchedule", "root", "scammo");
                     break;
                 default:
-                    $this->db = new PDO("mysql:host=localhost;dbname=d019e217", "d019e217", "gPLDXmfdpC3YfeGG");
+                    $this->db = new PDO("mysql:host=localhost;dbname=$config->dbNameName", "$config->dbNameName", "$config->dbPassword");
             }
             $this->db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
         }catch(PDOException $e) {
@@ -31,7 +34,7 @@ class backend {
         $STH->execute($newData);
     }
     function get_top_ranking($amount = 3){
-        $STH = $this->db->query("SELECT * FROM restaurantGuide");
+        $STH = $this->db->query("SELECT * FROM restaurantGuide ORDER BY topListe LIMIT $amount ");
         $STH->setFetchMode(PDO::FETCH_OBJ);
         return $STH;
     }
