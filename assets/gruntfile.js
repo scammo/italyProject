@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),			
 		watch: {
 			files: ['css/*.scss', 'js/*.js'],
-			tasks: ['sass', 'uglify', 'autoprefixer']
+			tasks: ['sass', 'uglify']
 		},	
 		uglify: {
 			dist: {
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-				style: 'compressed'
+					style: 'compressed'
 			},
 			files: {
 				'css/style.min.css' : 'css/base.scss',
@@ -26,6 +26,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.registerTask('default', ['watch',  'uglify', 'sass', 'autoprefixer', 'imagemin']);
+	grunt.registerTask('default', ['watch',  'uglify', 'sass']);
 };

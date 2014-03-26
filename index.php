@@ -10,7 +10,7 @@ $backendData = new backend();
         <style>
             <?
             //Der Style wird direkt in die seite geladen für einen besseren Pagespeed
-            echo file_get_contents('assets/css/style.css');
+            echo file_get_contents('assets/css/style.min.css');
             ?>
         </style>
     </head>
@@ -43,7 +43,7 @@ $backendData = new backend();
             ?>
         </section>
         <footer>
-            <ul>
+            <ul class="clearfix">
                 <li><a href="#" title="" target="_self">kontakt@mif.de</a></li>
                 <li><a href="#" title="" target="_self">Impressum</a></li>
             </ul>
