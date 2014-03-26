@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     echo "New Restaurant<br/>";
 }
 ?>
-<!DOCTPYE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">

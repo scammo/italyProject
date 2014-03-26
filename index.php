@@ -2,7 +2,7 @@
 require('backend.php');
 $backendData = new backend();
 ?>
-<!DOCYTPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -16,7 +16,8 @@ $backendData = new backend();
     </head>
     <body>
         <header>
-            <h1>Schüler Restaurant guide für Verona</h1>
+            <h1>SchülerRestaurantGuide </h1>
+            <h2>Der Guide der dich günstig durch Verona leitet</h2>
         </header>
         <section class="topRanking">
             <?
@@ -30,7 +31,7 @@ $backendData = new backend();
                 ?>
                 <article>
                     <header>
-                        <h2><?=$restaurantName?></h2>
+                        <h3><?=$restaurantName?></h3>
                     </header>
                     <aside>
                         Ranking: <?=$backendData->show_ranking($ranking)?> (<?=$ranking?>/5)<br/>
@@ -43,12 +44,11 @@ $backendData = new backend();
                 <?
             }
             ?>
-            <article></article>
         </section>
         <script>
             <?
             //Der Style wird direkt in die seite geladen für einen besseren Pagespeed
-            echo file_get_contents('assets/js/script.css');
+            echo file_get_contents('assets/js/main.js');
             ?>
         </script>
     </body>
