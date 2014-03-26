@@ -9,7 +9,7 @@
 
 class config {
     function __construct(){
-        $this->dbNameName = "d019e217";
-        $this->dbPassword = "gPLDXmfdpC3YfeGG";
+        $this->dbNameName = "root";
+        $this->dbPassword = "password";
     }
 } 

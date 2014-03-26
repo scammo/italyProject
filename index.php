@@ -42,6 +42,12 @@ $backendData = new backend();
             }
             ?>
         </section>
+        <footer>
+            <ul>
+                <li><a href="#" title="" target="_self">kontakt@mif.de</a></li>
+                <li><a href="#" title="" target="_self">Impressum</a></li>
+            </ul>
+        </footer>
         <script>
             <?
             //Der Style wird direkt in die seite geladen für einen besseren Pagespeed
