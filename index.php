@@ -42,6 +42,16 @@ $backendData = new backend();
             }
             ?>
         </section>
+        <section id="slider" class="clearfix">
+            <div class="box">
+                <ul class="bxslider">
+                    <li><img src="http://placehold.it/300x300" title="" alt="" height="300" width="300" /></li>
+                    <li><img src="http://placehold.it/300x300" title="" alt="" height="300" width="300" /></li>
+                    <li><img src="http://placehold.it/300x300" title="" alt="" height="300" width="300" /></li>
+                    <li><img src="http://placehold.it/300x300" title="" alt="" height="300" width="300" /></li>
+                </ul>
+            </div>
+        </section>
         <footer>
             <ul class="clearfix">
                 <li><a href="#" title="" target="_self">kontakt@mif.de</a></li>
@@ -51,7 +61,7 @@ $backendData = new backend();
         <script>
             <?
             //Der Style wird direkt in die seite geladen für einen besseren Pagespeed
-            echo file_get_contents('assets/js/main.js');
+            echo file_get_contents('assets/js/main.min.js');
             ?>
         </script>
     </body>

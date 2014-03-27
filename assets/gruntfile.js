@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 		},	
 		uglify: {
 			dist: {
-				//src: ['js/'],
-				//dest: 'js/main.min.js'
+				src: ['js/jquery-1.11.0.min.js', 'js/bxslider.min.js', 'js/bxslider.config.js'],
+				dest: 'js/main.min.js'
 			}
 		},
 		sass: {
