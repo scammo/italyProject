@@ -42,12 +42,14 @@ class backend extends config{
         $returnData = "";
         $ranking_amount_full_star = $ranking_amount;
         while($ranking_amount_full_star > 0){
-            $returnData .= "<img src='assets/img/star_full_16.png'/>";
+            // $returnData .= "<img src='assets/img/star_full_16.png'/>";
+            $returnData .= "<span class=\"fullstar\"></span>";
             $ranking_amount_full_star--;
         }
         $ranking_amount_empty = 5-$ranking_amount;
         while($ranking_amount_empty > 0){
-            $returnData .= "<img src='assets/img/star_empty_16.png'/>";
+            // $returnData .= "<img src='assets/img/star_empty_16.png'/>";
+            $returnData .= "<span class=\"emptystar\"></span>";
             $ranking_amount_empty--;
         }
         return $returnData;
