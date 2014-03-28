@@ -16,7 +16,7 @@ $backendData = new backend();
     </head>
     <body>
         <header>
-            <h1>SchülerRestaurantGuide </h1>
+            <h1>SchülerRestaurantGuide</h1>
             <h2>Der Guide der dich günstig durch Verona leitet</h2>
         </header>
         <section class="topRanking">
