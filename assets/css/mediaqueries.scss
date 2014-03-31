@@ -1,0 +1,17 @@
+@media all and (max-width: 870px) {
+	h1 {
+		font-size: 									3em;
+	}
+	h2 {
+		font-size: 									1em;
+	}
+	.topRanking {
+		padding: 									50px 10px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	h1 {
+		font-size: 									2em;
+	}
+}

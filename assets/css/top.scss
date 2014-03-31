@@ -1,0 +1,35 @@
+.topRanking {
+	background: 								url(./assets/img/firstBG.jpg) no-repeat center;
+	width: 										100%;
+	padding: 									50px;
+	margin: 									0 auto 50px;
+}
+
+.topRanking article:first-of-type {
+	margin-top: 								0;
+}
+
+.topRanking article {
+	margin-top: 								50px;
+	display: 									block;
+
+}
+
+.topRanking article h3 {
+	font-size: 									3em;
+}
+
+.topRanking article ul {
+	margin: 									10px 0;
+}
+
+.topRanking article ul li {
+	list-style:									none;
+	display: 									inline;
+	font-size: 									20px;
+}
+
+.topRanking article p {
+	line-height: 								1.22em;
+	float: 										left;
+}

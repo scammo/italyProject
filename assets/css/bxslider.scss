@@ -13,7 +13,8 @@
 /** Slider height
 ===================================*/
 #slider {
-	background: transparent url(./assets/img/bx_loader.gif) center center no-repeat;
+	background: transparent url(./assets/img/bx_loader.gif) no-repeat center center;
+	max-height: 300px !important;
 }
 
 #slider .box {
