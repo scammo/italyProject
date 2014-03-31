@@ -1,6 +1,6 @@
 <?
-    require('backend.php');
-    $backendData = new backend();
+require('backend.php');
+   $backendData = new backend();
 ?>
 <!DOCTYPE html>
 <html>
