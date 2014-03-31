@@ -14,7 +14,7 @@ class backend extends config{
         try{
             switch($_SERVER['SERVER_NAME']){
                 case 'localhost':
-                    $this->db = new PDO("mysql:host=localhost;dbname=$config->dbNameName", "$config->dbNameName", "$config->dbPassword");
+                    $this->db = new PDO("mysql:host=localhost;dbname=italyProject", "root", "password");
                     break;
                 default:
                     $this->db = new PDO("mysql:host=localhost;dbname=$config->dbNameName", "$config->dbNameName", "$config->dbPassword");

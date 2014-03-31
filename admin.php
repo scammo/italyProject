@@ -20,6 +20,11 @@ if(isset($_POST['submit'])){
 <html>
     <head>
         <meta charset="utf-8">
+        <style type="text/css">
+            form input {
+                display:block;
+            }
+        </style>
     </head>
     <body>
         <form method="post" action="">
