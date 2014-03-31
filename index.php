@@ -73,9 +73,9 @@ require('backend.php');
                     <ul>
                         <li>Ranking: <?=$backendData->show_generell_ranking($ranking)?> <!--(<?=$ranking?>/5)--></li>
                         <li>Hipster Ranking: <?=$backendData->show_hipster_ranking($hipsterRanking)?></li>
-                        <li>Hipster Ranking: <?=$backendData->show_price_ranking($hipsterRanking)?></li>
-                        <li>Hipster Ranking: <?=$backendData->show_food_ranking($hipsterRanking)?></li>
-                        <li>Hipster Ranking: <?=$backendData->show_location_ranking($hipsterRanking)?></li>
+                        <li>Preis Ranking: <?=$backendData->show_price_ranking($hipsterRanking)?></li>
+                        <li>Essen/Geschmack Ranking: <?=$backendData->show_food_ranking($hipsterRanking)?></li>
+                        <li>Location Ranking: <?=$backendData->show_location_ranking($hipsterRanking)?></li>
                     </ul>
                      <p class="clearfix">
                         <?=$description?>
