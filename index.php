@@ -1,6 +1,6 @@
 <?
-require('backend.php');
-$backendData = new backend();
+    require('backend.php');
+    $backendData = new backend();
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,15 +58,14 @@ $backendData = new backend();
         </section>
         <section class="googleMaps" id="map"></section>
         <section class="allRestaurants">
-            #empty
+            #empty 
         </section>
         <footer>
             <ul class="clearfix">
-                <li><a href="#" title="" target="_self">kontakt@mif.de</a></li>
-                <li><a href="#" title="" target="_self">Impressum</a></li>
+                <li><a href="mailto:kontakt@mif-sh.de?subject=SchülerRestaurantGuide Kontakt" title="Schreib uns eine E-Mail" target="_self">kontakt@mif-sh.de</a></li>
+                <li><a href="#impressum.php?noch-in-arbeit" title="Impressum" target="_self">Impressum</a></li>
             </ul>
         </footer>
-
         <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script> 
         <script>
             <? echo file_get_contents('assets/js/main.min.js'); ?>
