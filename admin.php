@@ -7,13 +7,16 @@ if(isset($_POST['submit'])){
         "rangliste" => mysql_real_escape_string($_POST["rangliste"]),
         "hipsterRanking" => mysql_real_escape_string($_POST["hipsterRanking"]),
         "ranking" => mysql_real_escape_string($_POST["ranking"]),
+        "preisleistungRanking" => mysql_real_escape_string($_POST["preisleistungRanking"]),
+        "geschmackRanking" => mysql_real_escape_string($_POST["geschmackRanking"]),
+        "locationRanking" => mysql_real_escape_string($_POST["locationRanking"]),
         "description" => mysql_real_escape_string($_POST["describtion"]),
         "googlemaps" => mysql_real_escape_string($_POST["googlemaps"]),
         "websiteLink" => mysql_real_escape_string($_POST["websiteLink"])
     );
     $backend->new_restaurant((array)$newRestaurantData);
 
-    echo "New Restaurant<br/>";
+    echo "Restaurant wurde erstellt.<br/>";
 }
 ?>
 <!DOCTYPE html>
@@ -29,11 +32,14 @@ if(isset($_POST['submit'])){
     <body>
         <form method="post" action="">
             <h3>Neues Restaurant</h3>
-            <input autofocus type="text" name="nameRestaurant" placeholder="Restaurant Name">
-            <textarea name="describtion" placeholder="Kleine Beschreibung mit ergänzungen etc..." cols="40" rows="10"></textarea><br/>
-            <input type="number" name="rangliste" placeholder="Rangliste">
-            <input type="number" name="ranking" placeholder="Ranking">
-            <input type="number" name="hipsterRanking" placeholder="Hipster Ranking">
+            <input required autofocus type="text" name="nameRestaurant" placeholder="Restaurant Name">
+            <textarea required name="describtion" placeholder="Kleine Beschreibung mit ergänzungen etc..." cols="40" rows="10"></textarea><br/>
+            <input required type="number" name="rangliste" placeholder="Rangliste">
+            <input required type="number" name="ranking" placeholder="Ranking">
+            <input required type="number" name="preisleistungRanking" placeholder="Ranking Preisleistung">
+            <input required type="number" name="geschmackRanking" placeholder="Ranking Geschmack">
+            <input required type="number" name="locationRanking" placeholder="Ranking Location">
+            <input required type="number" name="hipsterRanking" placeholder="Hipster Ranking">
             <br/>
 
             <input type="text" name="websiteLink" placeholder="Website Link">
