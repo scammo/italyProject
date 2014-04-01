@@ -9,6 +9,10 @@
 
 class config {
     function __construct(){
+        $this->dbLocalName = "italyProject";
+        $this->dbLocalUser = "root";
+        $this->dbLocalPassword = "password";
+
         $this->dbNameName = "root";
         $this->dbPassword = "password";
     }

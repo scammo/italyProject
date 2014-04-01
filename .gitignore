@@ -1,0 +1,7 @@
+.idea
+
+config.php
+node_modules
+assets/gruntfile.js
+assets/package.json
+assets/.sass-cache
