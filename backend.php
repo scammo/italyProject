@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: samuel
- * Date: 25.03.14
- * Time: 11:02
- */
+
 
 require('config.php');
 
