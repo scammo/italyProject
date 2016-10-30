@@ -1,6 +1,8 @@
 #.idea
 config.php
+.DS_Store
 node_modules
+assets/node_modules
 assets/gruntfile.js
 assets/package.json
 assets/.sass-cache
